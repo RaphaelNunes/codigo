@@ -4,7 +4,7 @@
 </head>
 <body onLoad="visibilidadeCargo()">
 	<?php
-
+        
 	include("config.php");
 	include("functions.php");
 
@@ -39,7 +39,7 @@
 		 	<?php include("content/topo.inc.php"); ?>	 		
 	  	</div>
 	  	<div id='menu'>
-		 	<? include("content/menu.inc.php"); ?>  
+		 	<?php include("content/menu.inc.php"); ?>  
 		</div>
 	  	<div id='navegacao'>
 	  		<div id='conteudo'>

@@ -1,10 +1,5 @@
 <?php
-     $conexao = mysql_connect("localhost","root","123");
-	if(!$conexao){
-    		die('Não foi possível conectar: ' . mysql_error());
-	}
-	else
-            echo 'Conexão bem sucedida';
+        include '../config.php';
     //    $recurso = $_SERVER ['REQUEST_URI'];
 	mysql_select_db("politicos_brasileiros", $conexao);
 	mysql_set_charset("utf8");

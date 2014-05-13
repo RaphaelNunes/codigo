@@ -11,7 +11,7 @@
 </head>
 <body>
 	<?php 
-		//include("../../../config.php");
+                include("../config.php");
 		include("../../../functions.php");
 		include("../../../content/idioma.inc.php");
 	?>
@@ -26,6 +26,12 @@
 		<div id="navegacao">
 			<div id="conteudo">
 				<?php
+                                $conexao = mysql_connect("localhost","root","root");
+                                if(!$conexao){
+    		die('Não foi possível conectar: ' . mysql_error());
+	}
+	else
+            echo 'Conexão bem sucedida';
 				include_once("../../../sparql/ARC2.php");
 				
 				$endereco = $_SERVER ['REQUEST_URI'];
